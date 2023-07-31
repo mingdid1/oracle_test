@@ -1,0 +1,13 @@
+<%- include("../header") %>
+
+member_view<hr>
+
+<% console.log("ejs => ", member) %>
+<h3>상 세 정 보</h3>
+id : <%= member.ID %><br>
+pwd : <%= member.PWD %><br>
+addr : <%= member.ADDR %><br>
+name : <%= member.NAME %><br>
+<a href="/member/list">목록 이동</a>
+<a href="/member/modify_form?id=<%= member.ID %>">수정</a>
+<a href="/member/delete/<%= member.ID %>">삭제</a>
