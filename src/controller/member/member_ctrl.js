@@ -51,7 +51,8 @@ const memberView = async (req, res)=>{
 const modifyForm = async (req, res)=> {
     console.log("ctrl modify : ", req.query);
     //query: 값을 받아옴 (query로 받을 경우)
-    console.log("ctrl modify : ", req.params);
+    
+    //console.log("ctrl modify : ", req.params);
     //params: 값을 받아오지 못함(경로로 받을 경우)
     
     const member = await ser.getMember(req.query);
